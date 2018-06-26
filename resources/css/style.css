@@ -23,7 +23,7 @@ h4 {
   font-weight: bold;
 }
 
-#container {
+.container {
   max-width: 960px;
   margin: 0 auto;
   border: 1px solid white;
@@ -32,7 +32,7 @@ h4 {
 /* Company Header*/
 
 
-#company {
+.company {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -41,13 +41,13 @@ h4 {
   color: white;
   background-color: black;
   position: relative;
-  right: 25%;
+  right: 20%;
   border: 1px solid white;
 
 
 }
 
-#company img {
+.company img {
   height: 1.5rem;
   padding-right: 1rem;
   padding-left: 0.5rem;
@@ -57,12 +57,12 @@ h4 {
 
 /*Main banner section*/
 
-#mid-container{
+.mid-container{
   width: 960px;
   margin:auto;
 }
 
-#main-banner {
+.main-banner {
   background-image: url("../../resources/media/moto.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -92,29 +92,7 @@ h4 {
   padding-left: 3rem;
 }
 
-@media only screen and (max-width: 470px){
-  .main-banner {
-    height: 15rem;
-  }
 
-  .headline {
-    width: 100%;
-    padding: 1rem 2rem;
-    top: 10rem;
-  }
-
-  .headline h4 {
-    font-family: Helvetica;
-    font-size: 0.77rem;
-    font-weight: bold;
-  }
-
-  .headline h1 {
-    font-family: Helvetica;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-}
 
 
 /* Nav bar*/
@@ -146,13 +124,13 @@ main {
   margin: auto;
 }
 
-#prodacts-container {
-   max-width: 960px;
+.prodacts-container {
+   width: 960px;
    margin: auto;
    background-color: white;
 }
 
-#prodacts-content{
+.prodacts-content{
   border: 1px dotted black;
   display: flex;
   justify-content: center;
@@ -215,7 +193,7 @@ figure {
 
 /* info section*/
 
-#info-container {
+.info-container {
   width: 960px;
   margin: auto;
   background-color: white;
@@ -228,7 +206,6 @@ figure {
   justify-content: space-between;
   margin-top: 3rem;
   margin-bottom: 4rem;
-  width: 100%;
   background-color: white;
 
 }
@@ -256,7 +233,7 @@ figure {
 
 
 
-#footer-container {
+.footer-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -280,9 +257,62 @@ copyright {
 }
 
 @media only screen and (max-width: 470px) {
+
+  .main-banner {
+    height: 15rem;
+  }
   footer {
     text-align: center;
   }
+
+  .headline {
+  position: relative;
+  top: 10rem;
+  height: 4.85rem;
+}
+
+.headline h4 {
+  font-family: Helvetica;
+  font-size: 0.77rem;
+  font-weight: bold;
+
+}
+
+.headline h1 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 2rem;
+}
+
+.prodacts{
+  width: 90%;
+}
+
+.watch {
+  display: none;
+}
+
+.company{
+  justify-content: center;
+  align-items: center;
+}
+
+.business-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+ .info {
+   width: 90%;
+   margin-bottom: 0.5rem;
+ }
+
+ copyright {
+   text-align: center;
+ }
+
 
 }
 
@@ -306,12 +336,11 @@ copyright {
     display: none;
   }
 
-  .business-info {
-    justify-content: space-around;
-    align-items: center;
-  }
+
+
 
   .info{
     width: 35%;
   }
+
 }
